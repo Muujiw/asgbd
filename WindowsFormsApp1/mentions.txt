@@ -1,0 +1,84 @@
+Mentions légales de l'application bureautique des Assurances Saint Gabriel (ASG)
+
+
+1. Identification de l’éditeur
+L'application est éditée par Assurances Saint Gabriel (ASG), société multinationale spécialisée dans les produits d'assurance.
+Siège administratif : 10 Avenue de la Liberté, 92220 Bagneux, France
+Siège social : Rue du Rhône 8, 1204 Genève, Suisse
+Contact : contact@asg.com
+
+2. Description de l’application
+Cette application bureautique est destinée exclusivement à un usage interne par les collaborateurs des Assurances Saint Gabriel. Elle permet :
+
+La gestion des collaborateurs (ajout, modification, suppression, consultation).
+La gestion des formations (création, modification, suppression, et suivi des inscriptions).
+Les fonctionnalités incluent :
+
+Une interface sécurisée avec connexion par identifiant et mot de passe.
+Un respect strict des réglementations RGPD pour la gestion des données personnelles.
+Un système de confirmation avant toute suppression ou modification de données sensibles.
+3. Accès à l’application
+L’accès à l’application est restreint aux utilisateurs autorisés disposant d’un identifiant et d’un mot de passe. Les rôles utilisateur sont définis comme suit :
+
+Administrateur : Gestion complète des collaborateurs et des formations.
+Ressources Humaines : Gestion des collaborateurs et formations spécifiques à leur département.
+Collaborateur : Accès limité aux formations et informations personnelles.
+En cas de perte ou de vol des identifiants, veuillez contacter immédiatement l’administrateur réseau.
+
+4. Responsabilité
+Assurances Saint Gabriel met tout en œuvre pour garantir la fiabilité et la sécurité des données dans l’application. Cependant :
+
+Les utilisateurs sont responsables de l’exactitude des données saisies.
+Toute utilisation non autorisée des identifiants est sous la responsabilité de l’utilisateur concerné.
+L’éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant d’une mauvaise utilisation de l’application.
+
+5. Protection des données personnelles
+Conformément au Règlement Général sur la Protection des Données (RGPD) :
+
+Finalités du traitement :
+Les données personnelles des collaborateurs (nom, prénom, adresse, email, etc.) et des formations sont utilisées uniquement pour :
+
+La gestion administrative des ressources humaines.
+La planification et le suivi des formations internes.
+Conservation des données :
+Les données sont conservées pendant la durée d'activité du collaborateur ou pour une période maximale de 5 ans après son départ, sauf obligation légale contraire.
+
+Sécurisation des données :
+
+Les mots de passe sont hachés à l’aide de l’algorithme BCrypt.
+Les accès sont contrôlés par un système de rôles et permissions.
+Les données sensibles sont transmises de manière chiffrée.
+Droits des utilisateurs :
+
+Droit d'accès et de rectification : Vous pouvez demander à consulter ou corriger vos données.
+Droit à l’effacement : Sous réserve des obligations légales, vous pouvez demander la suppression de vos données.
+Droit d’opposition : Vous pouvez refuser l’utilisation de vos données à des fins non essentielles.
+Pour toute demande concernant vos données personnelles, contactez : rgpd@asg.com.
+
+6. Ergonomie et graphisme
+L’application respecte la charte graphique des Assurances Saint Gabriel, avec un design épuré et des nuances de bleu.
+Les éléments ergonomiques incluent :
+
+Des info-bulles sur les champs de saisie pour guider l’utilisateur.
+Une navigation uniforme avec des boutons clairement identifiables.
+Des contrôles de saisie empêchant les erreurs et les actions non intentionnelles.
+7. Limites d’utilisation
+L’utilisation de l’application à des fins personnelles ou non autorisées est strictement interdite. Toute tentative de modifier ou de contourner les fonctionnalités de l’application sera signalée et pourra faire l’objet de sanctions disciplinaires ou légales.
+
+8. Tests et mises à jour
+L’application a été soumise à un plan de tests rigoureux couvrant :
+
+Les fonctionnalités de connexion, gestion des collaborateurs et formations.
+La conformité aux normes RGPD.
+Des mises à jour régulières seront déployées pour améliorer les performances et la sécurité. Les utilisateurs seront informés à l’avance des éventuelles interruptions de service.
+
+9. Propriété intellectuelle
+Tous les droits, y compris les textes, images, icônes et structure de la base de données, sont la propriété exclusive des Assurances Saint Gabriel.
+Toute reproduction ou utilisation non autorisée est strictement interdite.
+
+10. Support technique
+Pour toute question ou problème technique, veuillez contacter :
+
+Email : support@asg.com
+Téléphone : +33 1 23 45 67 89
+Le support est disponible du lundi au vendredi, de 9h à 18h.

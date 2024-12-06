@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class LogoutButton : Form
     {
         private String loggedInUser;
         private DatabaseManager dbManager;
-        public Form2(string loggedInUser)
+        public LogoutButton(string loggedInUser)
         {
             InitializeComponent();
             dbManager = new DatabaseManager("localhost", "asg_database", "root", "");
@@ -30,6 +30,8 @@ namespace WindowsFormsApp1
         {
 
         }
+
+     
 
 
 
@@ -331,7 +333,13 @@ namespace WindowsFormsApp1
             MessageBox.Show("Mise à jour des formations effectuée avec succès !");
         }
 
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Fermer la fenêtre actuelle
+            this.Close();
+            // Afficher la fenêtre de connexion
+            new Form1().Show();
+        
+    }
     }
 }

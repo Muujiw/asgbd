@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form2
+    partial class LogoutButton
     {
         /// <summary>
         /// Required designer variable.
@@ -36,13 +36,14 @@
             this.updateDatabaseFromDataGridViewButton = new System.Windows.Forms.Button();
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridViewFormations = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.deleteFormationFromIDButton = new System.Windows.Forms.Button();
             this.updateDBFromdataGridViewFormations = new System.Windows.Forms.Button();
+            this.dataGridViewFormations = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.LogoutButton1 = new System.Windows.Forms.Button();
             this.refreshFromDatabaseButton.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
@@ -134,35 +135,6 @@
             this.tabPage2.Text = "Formations";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(263, 36);
-            this.label1.MaximumSize = new System.Drawing.Size(200, 200);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bonjour, ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(724, 16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(339, 53);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Rafraichir depuis la base de données";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dataGridViewFormations
-            // 
-            this.dataGridViewFormations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFormations.Location = new System.Drawing.Point(3, 0);
-            this.dataGridViewFormations.Name = "dataGridViewFormations";
-            this.dataGridViewFormations.Size = new System.Drawing.Size(1230, 500);
-            this.dataGridViewFormations.TabIndex = 1;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -199,15 +171,57 @@
             this.updateDBFromdataGridViewFormations.UseVisualStyleBackColor = true;
             this.updateDBFromdataGridViewFormations.Click += new System.EventHandler(this.updateDBFromdataGridViewFormations_Click);
             // 
-            // Form2
+            // dataGridViewFormations
+            // 
+            this.dataGridViewFormations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFormations.Location = new System.Drawing.Point(3, 0);
+            this.dataGridViewFormations.Name = "dataGridViewFormations";
+            this.dataGridViewFormations.Size = new System.Drawing.Size(1230, 500);
+            this.dataGridViewFormations.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(263, 36);
+            this.label1.MaximumSize = new System.Drawing.Size(200, 200);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bonjour, ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(724, 16);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(339, 53);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Rafraichir depuis la base de données";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // LogoutButton1
+            // 
+            this.LogoutButton1.Location = new System.Drawing.Point(-1, 0);
+            this.LogoutButton1.Name = "LogoutButton1";
+            this.LogoutButton1.Size = new System.Drawing.Size(94, 23);
+            this.LogoutButton1.TabIndex = 2;
+            this.LogoutButton1.Text = "Déconnexion";
+            this.LogoutButton1.UseVisualStyleBackColor = true;
+            this.LogoutButton1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // LogoutButton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1264, 655);
+            this.Controls.Add(this.LogoutButton1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.refreshFromDatabaseButton);
-            this.Name = "Form2";
+            this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Name = "LogoutButton";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.refreshFromDatabaseButton.ResumeLayout(false);
@@ -239,5 +253,6 @@
         private System.Windows.Forms.Button deleteFormationFromIDButton;
         private System.Windows.Forms.Button updateDBFromdataGridViewFormations;
         private System.Windows.Forms.DataGridView dataGridViewFormations;
+        private System.Windows.Forms.Button LogoutButton1;
     }
 }

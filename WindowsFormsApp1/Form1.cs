@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -56,7 +57,7 @@ namespace WindowsFormsApp1
                 {
                     // close the login form and open the main form
                     this.Hide();
-                    new Form2(name).Show();
+                    new LogoutButton(name).Show();
                 }
                 else
                 {
@@ -69,5 +70,24 @@ namespace WindowsFormsApp1
             }
         }
 
+
+        private void showMentionsLegales()
+        {
+            MentionsLegalesForm mentionsForm = new MentionsLegalesForm();
+            mentionsForm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showMentionsLegales();
+        }
+
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            // Fermer la fenêtre actuelle
+            this.Close();
+            // Afficher la fenêtre de connexion
+            new Form1().Show();
+        }
     }
 }
