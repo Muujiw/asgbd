@@ -65,5 +65,47 @@ namespace WindowsFormsApp1
 
             return dataTable;
         }
+
+        public DataTable FetchDataWithParameters(string query, params MySqlParameter[] parameters)
+        {
+            DataTable dataTable = new DataTable();
+
+            using (var connection = GetConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddRange(parameters);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+                    adapter.Fill(dataTable);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erreur lors de la récupération des données : " + ex.Message);
+                }
+            }
+
+            return dataTable;
+        }
+
+        public void ExecuteQueryWithParameters(string query, MySqlParameter[] parameters)
+        {
+            using (var connection = GetConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand(query, connection);
+                    command.Parameters.AddRange(parameters);
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erreur lors de l'exécution de la requête : " + ex.Message);
+                }
+            }
+        }
+
     }
 }
