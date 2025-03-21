@@ -46,7 +46,6 @@ namespace WindowsFormsApp1
             // password is hashed with BCRYPT, so we need to hash the input password before comparing
             string query = $"SELECT * FROM users WHERE email='{username}'";
             var userData = dbManager.FetchData(query);
-            string name = userData.Rows[0]["name"].ToString();
 
             if (userData != null && userData.Rows.Count > 0)
             {
@@ -57,6 +56,7 @@ namespace WindowsFormsApp1
                 {
                     // close the login form and open the main form
                     this.Hide();
+                    string name = userData.Rows[0]["name"].ToString();
                     new LogoutButton(name).Show();
                 }
                 else
